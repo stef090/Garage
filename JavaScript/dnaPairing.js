@@ -7,9 +7,15 @@ function pairElement(str) {
     "G": "C"
   };
   var str_split = str.split("");
-  
-  
-  return str;
-}
+  var output = []
+  for(var element in str_split)
+  {
+    var pair = []
+    pair.push(str_split[element]);
+    pair.push(pairing[str_split[element]]);
+    output.push(pair);
 
+  }
+  return output;
+}
 pairElement("GCG");
