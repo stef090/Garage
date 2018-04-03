@@ -6,13 +6,13 @@ function whatIsInAName(collection, source) {
   var arr = [];
   // Only change code below this line
   //
-  var keys = Object.keys(source)
+  var keys = Object.keys(source);
   arr = collection.filter(function(object){
     return keys.every(function(key){
 
       return object.hasOwnProperty(key) && object[key] === source[key];
-    })
-  })
+    });
+  });
 
   // Only change code above this line
   return arr;
