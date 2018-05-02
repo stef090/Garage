@@ -26,7 +26,7 @@ function smallestCommons(arr) {
           divisor++;
         }
       }
-      divisors[original_value] = division
+      divisors[original_value] = division;
     }
   }
 )
