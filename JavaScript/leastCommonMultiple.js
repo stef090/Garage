@@ -74,11 +74,11 @@ function multiplyFactors(factors, repetitions)
   var result = 1;
   for(var i=0;i<factors.length;i++)
   {
-    result*=factors[i]*repetitions[i];
+    result*=factors[i]**repetitions[i];
   }
   console.log(result);
   return result;
 }
 
 
-smallestCommons([1,13]);
+smallestCommons([23,18]);
